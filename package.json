@@ -9,7 +9,8 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'",
-    "format": "prettier --write ./src/**/*.{js,svelte,html,ts}"
+    "format": "prettier --write ./src/**/*.{js,svelte,html,ts}",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@sveltejs/kit": "next",
@@ -37,6 +38,7 @@
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1"
   },
+  "private": true, 
   "lint-staged": {
     "*.{js,ts,svelte}": ["svelte-check", "npm run lint:fix"]
   }
