@@ -20,6 +20,7 @@
       error: new Error(message)
     }
   }
+
 </script>
 
 <script lang="ts">
@@ -43,8 +44,11 @@
       return t
     })
   }
+
 </script>
 
 <svelte:head>
   <title>Todosd</title>
 </svelte:head>
+
+<div>Todo</div>

@@ -20,10 +20,6 @@
 </svelte:head>
 
 <div class="">
-  <h1>About this app</h1>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laudantium facere
-    dolorem nemo culpa voluptatum reprehenderit voluptas magnam quo assumenda repudiandae,
-    quis atque pariatur quae. Doloremque id cumque ipsam illo.
-  </p>
+  <div class="font-medium text-5xl mb-2">About</div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laudantium facere dolorem nemo culpa voluptatum reprehenderit voluptas magnam quo assumenda repudiandae, quis atque pariatur quae. Doloremque id cumque ipsam illo.</p>
 </div>
