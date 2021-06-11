@@ -86,11 +86,13 @@
   a:hover {
     color: var(--accent-color);
   }
+
 </style>
 
 <script lang="ts">
   import { page } from '$app/stores'
   import logo from './svelte-logo.svg'
+
 </script>
 
 <header>
@@ -111,6 +113,9 @@
       </li>
       <li class:active={$page.path === '/todos'}>
         <a sveltekit:prefetch href="/todos">Todos</a>
+      </li>
+      <li class:active={$page.path === '/bird'}>
+        <a sveltekit:prefetch href="/bird">Bird</a>
       </li>
     </ul>
     <svg viewBox="0 0 2 3" aria-hidden="true">

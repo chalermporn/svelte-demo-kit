@@ -16,11 +16,11 @@
 </script>
 
 <svelte:head>
-  <title>About</title>
+  <title>Bird</title>
 </svelte:head>
 
 <div class="">
-  <h1>About this app</h1>
+  <h1>Bird this app</h1>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laudantium facere
     dolorem nemo culpa voluptatum reprehenderit voluptas magnam quo assumenda repudiandae,

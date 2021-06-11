@@ -4,7 +4,10 @@ module.exports = {
 	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
 	plugins: ['svelte3', '@typescript-eslint'],
 	ignorePatterns: ['*.cjs'],
-	overrides: [{ files: ['*.svelte'], processor: 'svelte3/svelte3' }],
+	overrides: [{
+		files: ['*.svelte'],
+		processor: 'svelte3/svelte3'
+	}],
 	settings: {
 		'svelte3/typescript': () => require('typescript')
 	},
@@ -16,5 +19,14 @@ module.exports = {
 		browser: true,
 		es2017: true,
 		node: true
+	},
+	rules: {
+		'no-var': 'error',
+		'semi': 'error',
+		'max-params': [
+			'error',
+			4
+		],
+		'eqeqeq': 'error'
 	}
 };
