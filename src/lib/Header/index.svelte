@@ -1,10 +1,3 @@
-<style>
-  .active {
-    text-decoration: underline;
-  }
-
-</style>
-
 <script lang="ts">
   import { page } from '$app/stores'
   import logo from './svelte-logo.svg'
@@ -32,11 +25,11 @@
         </div>
       </div>
       <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-        <a sveltekit:prefetch href="/" class="font-medium text-gray-500  hover:text-gray-900" class:active={$page.path === '/'}>Home</a>
-        <a sveltekit:prefetch href="/about" class="font-medium text-gray-500  hover:text-gray-900" class:active={$page.path === '/about'}>About</a>
-        <a sveltekit:prefetch href="/todos" class="font-medium text-gray-500  hover:text-gray-900" class:active={$page.path === '/todos'}>Todos</a>
+        <a sveltekit:prefetch href="/" class={$page.path === '/' ? 'font-medium text-gray-500  hover:text-gray-900 underline' : 'font-medium text-gray-500  hover:text-gray-900'}>Home</a>
+        <a sveltekit:prefetch href="/about" class={$page.path === '/about' ? 'font-medium text-gray-500  hover:text-gray-900 underline' : 'font-medium text-gray-500  hover:text-gray-900'}>About</a>
+        <a sveltekit:prefetch href="/todos" class={$page.path === '/todos' ? 'font-medium text-gray-500  hover:text-gray-900 underline' : 'font-medium text-gray-500  hover:text-gray-900'}>Todos</a>
 
-        <a sveltekit:prefetch href="/bird" class="font-medium text-indigo-600 hover:text-indigo-500" class:active={$page.path === '/bird'}>Bird</a>
+        <a sveltekit:prefetch href="/bird" class={$page.path === '/bird' ? 'font-medium text-indigo-600 hover:text-indigo-500 underline' : 'font-medium text-indigo-600 hover:text-indigo-500'}>Bird</a>
       </div>
     </nav>
   </div>
