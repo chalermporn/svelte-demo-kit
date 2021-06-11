@@ -12,14 +12,14 @@
 
 <section>
 	<h1>
-		<div class="welcome">
+		<div class="welcome bg-red-300">
 			<picture>
 				<source srcset="svelte-welcome.webp" type="image/webp" />
 				<img src="svelte-welcome.png" alt="Welcome" />
 			</picture>
 		</div>
 
-		to your new<br />SvelteKit app
+		to your new dd<br />SvelteKit app
 	</h1>
 
 	<h2>
